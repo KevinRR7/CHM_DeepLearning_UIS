@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     print(f"Inicializando modelo...", flush=True)
    
-    model = UNet(img_size=256, num_channels=3, num_classes=1).to(device)
+    model = modelchm(img_size=256, num_channels=3, num_classes=1).to(device)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     #Logica de la loss function
     if args.loss == 'l1':
