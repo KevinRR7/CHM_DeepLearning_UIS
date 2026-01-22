@@ -18,6 +18,7 @@ The core of this project is a hybrid encoder-decoder structure:
 
 ## 📁 Repository Structure
 ```text
+├── assets/             # resources for the README.md
 ├── data/               # Instructions for HDF5 dataset structure
 ├── models/             # Architecture definition (MiT-B5 + U-Net)
 ├── scripts/            # Training (train.py) and Inference (predict.py)
