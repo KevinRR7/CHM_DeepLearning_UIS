@@ -1,0 +1,23 @@
+# Core Deep Learning
+torch
+torchvision
+torchaudio
+
+# Architecture (U-Net with Transformers)
+segmentation-models-pytorch
+timm
+
+# Geospatial and Data Handling
+h5py
+rasterio
+numpy
+pandas
+
+# Visualization and Progress
+matplotlib
+tqdm
+tensorboard
+
+# Image Processing
+opencv-python
+scikit-image
