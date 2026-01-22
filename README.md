@@ -1,4 +1,4 @@
-# a High-Resolution Canopy Height Model using a Deep Learning Approach
+# A High-Resolution Canopy Height Model using a Deep Learning Approach
 
 This repository contains the implementation of a deep learning framework designed to estimate forest canopy height from RGB aerial imagery. By integrating **Hierarchical Vision Transformers (MiT-B5)** into a **U-Net** architecture, the model captures both local textures and global spatial contexts, achieving high precision in diverse forest ecosystems.
 
@@ -11,7 +11,7 @@ This repository contains the implementation of a deep learning framework designe
 The core of this project is a hybrid encoder-decoder structure:
 - **Encoder:** Mix Transformer (MiT-B5) - Provides a powerful hierarchical representation of forest patterns.
 - **Decoder:** U-Net style upsampling to recover spatial resolution for precise height mapping.
-- **Data Format:** Optimized HDF5 handling for massive datasets (23k+ patches).
+- **Data Format:** Optimized HDF5 handling for big datasets (23k+ patches).
 
 ## 📁 Repository Structure
 ```text
