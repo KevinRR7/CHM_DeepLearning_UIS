@@ -47,7 +47,7 @@ def run_inference(model_path, image_path, output_dir, device):
 
 if __name__ == '__main__':
     # Configuración rápida
-    MODEL_WEIGHTS = './results/experimento1/checkpoints/best_model.pth'
+    MODEL_WEIGHTS = './checkpoints/best_model.pth'
     INPUT_FOLDER = './test_images/'
     OUTPUT_FOLDER = './predictions/'
     
