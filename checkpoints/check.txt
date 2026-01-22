@@ -1,4 +1,22 @@
-Download the checkpoint from the Google Drive:
+============================================================
+MODEL CHECKPOINT INSTRUCTIONS
+============================================================
 
+To run the inference script (predict.py), you must place the 
+trained model weights and the data in the right folder.
 
-And put the checkpoint in this folder in order to execute the inference.py
+1. DOWNLOAD WEIGHTS
+-------------------
+Download the 'best_model.pth' from the following Drive link:
+link de drive
+
+2. FILE PLACEMENT
+-----------------
+Ensure the file is named exactly 'best_model.pth' and is 
+located at: ./checkpoints/best_model.pth
+
+3. RUN PREDICTION
+-----------------
+The predict.py script is pre-configured to look for the weights 
+in this directory by default.
+============================================================
