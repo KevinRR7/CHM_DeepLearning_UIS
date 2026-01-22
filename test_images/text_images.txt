@@ -1,0 +1,39 @@
+============================================================
+TEST IMAGES & INFERENCE GUIDE
+============================================================
+
+To see the model in action
+Perform the following steps:
+
+1. DOWNLOAD SAMPLE IMAGES and checkpoint
+-------------------------
+Due to storage limits on GitHub, the high-resolution test 
+images and checkpoint are hosted on Google Drive. 
+
+Download them here: link de drive
+
+2. FOLDER SETUP
+---------------
+Place the downloaded images inside 
+this directory: /test_images/
+
+And place the checkpoint inside 
+this directory: /checkpoints/
+
+3. RUN INFERENCE
+----------------
+Use the provided 'predict.py' script in the /scripts/ folder 
+to generate Canopy Height Model (CHM) predictions:
+
+   python scripts/predict.py --image_path ./test_images/sample.jpg
+
+4. EXPECTED OUTPUT
+------------------
+The script will process the RGB input and save a 
+visualization in the /predictions/ folder showing:
+- Original RGB Image
+- Predicted CHM (with color scale in meters)
+
+Note: Ensure you have the 'best_model.pth' file in your 
+checkpoints directory before running the script.
+============================================================
