@@ -110,8 +110,7 @@ if __name__ == '__main__':
                         main_loss = criterion(predictions_masked, targets_masked).mean()
                     else:
                         main_loss = torch.tensor(0.0, device=device)
-                    tv_loss = total_variation_loss(predictions)
-                    loss = main_loss + 0 * tv_loss
+                    loss = main_loss
                     
                 scaler.scale(loss).backward()
                 scaler.step(optimizer)
