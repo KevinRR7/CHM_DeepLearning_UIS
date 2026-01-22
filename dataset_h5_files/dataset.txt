@@ -1,0 +1,52 @@
+============================================================
+HDF5 DATASET STRUCTURE & REPLICATION GUIDE
+============================================================
+
+To ensure compatibility with the training pipeline, follow these 
+specifications for creating or verifying the HDF5 files.
+
+1. FILE NAMING CONVENTION
+-------------------------
+The training script expects two specific files in the data directory:
+- train_dataset.h5: Training samples (e.g., ~20,629 patches).
+- val_dataset.h5: Validation samples for metric tracking.
+
+2. INTERNAL DATA STRUCTURE (H5 KEYS)
+------------------------------------
+The files must be structured as dictionaries with the following keys:
+
+- 'rgb': Input aerial imagery patches.
+  * Shape: (N, C, H, W) or (N, H, W, C)
+  * Values: Raw integers [0 - 255].
+  
+- 'chm': Ground-truth Canopy Height Model (CHM).
+  * Shape: (N, H, W)
+  * Values: Real height values in meters.
+
+3. NORMALIZATION STRATEGY
+-------------------------
+IMPORTANT: Data is stored in its RAW format within the HDF5 files.
+- No normalization is applied during the creation of the .h5 files.
+- Scaling (0-1) and Standardization (ImageNet mean/std) are performed 
+  DYNAMICALLY within the PyTorch DataLoader during runtime.
+- This allows for flexible experimentation with different normalization 
+  techniques without re-generating the heavy HDF5 datasets.
+
+4. REPLICATION SNIPPET (Python)
+-------------------------------
+If you are creating a new dataset, use the following logic after procesing your rgb and chm arrays:
+
+import h5py
+import numpy as np
+
+with h5py.File('train_dataset.h5', 'w') as f:
+    f.create_dataset('rgb', data=your_rgb_array, compression="gzip")
+    f.create_dataset('chm', data=your_chm_array, compression="gzip")
+
+5. VERIFICATION (Smoke Test)
+----------------------------
+Run this in your terminal inside the data folder:
+python -c "import h5py; f=h5py.File('train_dataset.h5', 'r'); print(f'Keys: {list(f.keys())}'); print(f'RGB Shape: {f[\"rgb\"].shape}'); f.close()"
+
+Target Keys: ['chm', 'rgb']
+============================================================
