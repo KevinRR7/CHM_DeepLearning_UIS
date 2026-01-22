@@ -12,6 +12,9 @@ The core of this project is a hybrid encoder-decoder structure:
 - **Encoder:** Mix Transformer (MiT-B5) - Provides a powerful hierarchical representation of forest patterns.
 - **Decoder:** U-Net style upsampling to recover spatial resolution for precise height mapping.
 - **Data Format:** Optimized HDF5 handling for big datasets (23k+ patches).
+- 
+![Predicción de Altura de Dosel](./assets/image_pred.png)
+
 
 ## 📁 Repository Structure
 ```text
@@ -22,4 +25,3 @@ The core of this project is a hybrid encoder-decoder structure:
 ├── requirements.txt    # Required libraries (PyTorch, SMP, H5py)
 └── README.md           # Project documentation
 
-![Predicción de Altura de Dosel](./assets/image_pred.png)
