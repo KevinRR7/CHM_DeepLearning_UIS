@@ -1,1 +1,4 @@
+Download the checkpoint from the Google Drive:
 
+
+And put the checkpoint in this folder in order to execute the inference.py
