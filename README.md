@@ -21,3 +21,5 @@ The core of this project is a hybrid encoder-decoder structure:
 ├── test_images/        # Sample images and download instructions
 ├── requirements.txt    # Required libraries (PyTorch, SMP, H5py)
 └── README.md           # Project documentation
+
+![Predicción de Altura de Dosel](./assets/maperror_val.pdf)
