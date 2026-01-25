@@ -8,7 +8,7 @@ specifications for creating or verifying the HDF5 files.
 1. FILE NAMING CONVENTION
 -------------------------
 The training script expects two specific files in the data directory:
-- train_dataset.h5: Training samples (e.g., ~20,629 patches).
+- train_dataset.h5: Training sample
 - val_dataset.h5: Validation samples for metric tracking.
 
 2. INTERNAL DATA STRUCTURE (H5 KEYS)
