@@ -8,7 +8,7 @@ trained model weights and the data in the right folder.
 1. DOWNLOAD WEIGHTS
 -------------------
 Download the 'best_model.pth' from the following Drive link:
-link de drive
+https://drive.google.com/drive/folders/1Iz_t2ZtWe19txEgT9baiXfhMzfTu8iqg
 
 2. FILE PLACEMENT
 -----------------
