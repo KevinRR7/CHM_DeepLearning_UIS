@@ -10,7 +10,7 @@ Perform the following steps:
 Due to storage limits on GitHub, the high-resolution test 
 images and checkpoint are hosted on Google Drive. 
 
-Download them here: link de drive
+Download them here: https://drive.google.com/drive/folders/1C1Qdg-97C-P5hD8QvJi_OLPq93i_yPra
 
 2. FOLDER SETUP
 ---------------
