@@ -4,6 +4,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch.utils.data import Dataset
 
 def log_cosh_loss(prediction, target):
     loss = torch.log(torch.cosh(prediction - target))
