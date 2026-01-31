@@ -25,7 +25,7 @@ this directory: /checkpoints/
 Use the provided 'predict.py' script in the /scripts/ folder 
 to generate Canopy Height Model (CHM) predictions:
 
-   python scripts/predict.py --image_path ./test_images/sample.jpg
+   python scripts/predict.py --image_path ./test_images
 
 4. EXPECTED OUTPUT
 ------------------
